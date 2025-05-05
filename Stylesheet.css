@@ -1,0 +1,92 @@
+/* Standard */
+.img_standard {
+	height: 400px;
+}
+
+/* Custom CSS */
+.custom-logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+#border {
+	color: #ba9bd4;
+}
+.entry-title {
+display: none;
+}
+.divider {
+    height: 50px	;
+    background-color: #ba9bd4;
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+}
+.site-info {
+  font-size: 0.8125rem;
+  color: #586674;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 20px;
+	text-align: left;
+}
+.hoverNavText {
+  visibility: none; opacity: 0;
+  transition: opacity 0.3s;
+	display: block;
+}
+.navigation:hover .hoverNavText {
+  visibility: visible; opacity: 1;
+}
+
+/* Bootstrap Overide Rules */
+.display-3 h1 {
+	line-height: 1 !important;
+}
+.text-primary {
+	color: #6a3d9a !important;
+}
+.bg-primary {
+	background-color: #6a3d9a !important;
+}
+.border-primary {
+	border-color: #6a3d9a !important;
+}
+.text-secondary {
+	color: #ba9bd4 !important;
+}
+.bg-secondary {
+	background-color: #ba9bd4 !important;
+}
+.border-secondary {
+	border-color: #ba9bd4 !important;
+}
+.form-label {
+	margin-bottom: auto;
+}
+
+/* Media Rules */
+@media only screen and (min-width: 767px) {
+  .block_viewport {
+    height: 500px;
+  }
+	.divider {
+    height: 100px;
+	}
+}
+@media only screen and (max-width: 769px) {
+  #primary {
+    max-width: 800px;
+  }
+	.img_standard {
+		height: 100%;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.navigation {
+    display: flex;
+		flex-flow: row;
+	}
+	.hoverNavText {
+		font-size: x-large;
+    text-align: justify;
+	}
+}
